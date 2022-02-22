@@ -11,11 +11,12 @@ def generate(k):
         return PID
 
     def gen_cycles():
-        nparr = np.random.normal()
-        return
+        nparr = np.random.normal(loc = .5, size = 1)
+        return abs(Integer(nparr[0] * 10000 + 1000))
 
     def gen_mem():
-        return
+        nparr = np.random.normal(loc = .2, size = 1)
+        return Integer(nparr[0] * )
 
 
 
@@ -24,3 +25,5 @@ def generate(k):
         tuples.append(new_tuple)
 
     return tuples
+
+print(generate(100))
